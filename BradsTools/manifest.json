@@ -1,0 +1,19 @@
+{
+  "name": "Brad's Tools",
+  "version": "1.1",
+  "description": "A collection of tools.",
+  "browser_action": {
+    "default_icon": "bradmoji.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+	"matches": ["http://*/*", "https://*/*"],
+	"js": ["jquery-3.1.1.min.js", "content.js"]
+  }],
+  "permissions": [
+	"tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "manifest_version": 2
+}
